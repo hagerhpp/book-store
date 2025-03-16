@@ -1,0 +1,22 @@
+[
+    {
+      "id": "1",
+      "title": "Atomic Habits",
+      "author": "James Clear",
+      "price": 15.99,
+      "image": "/images/atomic-habits.jpg",
+      "category": "Self-help",
+      "rating": 4.8,
+      "inStock": true
+    },
+    {
+      "id": "2",
+      "title": "The Pragmatic Programmer",
+      "author": "Andrew Hunt & David Thomas",
+      "price": 29.99,
+      "image": "/images/pragmatic-programmer.jpg",
+      "category": "Programming",
+      "rating": 4.9,
+      "inStock": false
+    }
+  ]  

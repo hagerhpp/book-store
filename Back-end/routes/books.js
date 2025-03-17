@@ -40,7 +40,7 @@ router.get("/", (req, res) => {
 });
 
 /**
- * @desc Get book by Id
+ * @desc Get the book by Id
  * @route /api/books/:id
  * @method GET
  * @access public 
@@ -55,7 +55,7 @@ router.get("/:id", (req, res) => {
 });
 
 /**
- * @desc Create new book
+ * @desc Create a new book
  * @route /api/books
  * @method POST
  * @access public 
@@ -82,7 +82,7 @@ router.post("/", (req, res) => {
 });
 
 /**
- * @desc Update a book
+ * @desc Update the book by Id
  * @route /api/books/:id
  * @method PUT
  * @access public 
@@ -103,7 +103,7 @@ router.put("/:id", (req, res) => {
 });
 
 /**
- * @desc Delete a book
+ * @desc Delete the book by Id
  * @route /api/books/:id
  * @method DELETE
  * @access public 
@@ -117,7 +117,7 @@ router.delete("/:id", (req, res) => {
     }
 });
 
-// Validate Create Book
+// The Validate Of Create Book
 function validateCreateBook(obj) {
     const schema = Joi.object({
         title: Joi.string().trim().min(3).max(200).required(),
@@ -130,7 +130,7 @@ function validateCreateBook(obj) {
     return schema.validate(obj);
 }
 
-// Validate Update Book
+// The Validate Of Update Book
 function validateUpdateBook(obj) {
     const schema = Joi.object({
         title: Joi.string().trim().min(3).max(200),
